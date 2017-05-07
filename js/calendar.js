@@ -1,4 +1,3 @@
-
 const client_id = "1086657930486-mm9fggoimnv8lo08hu3jmbdh4gfg1gkp";
 
 let discovery_docs = ['https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest'];
