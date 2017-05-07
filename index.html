@@ -15,38 +15,38 @@
 </head>
 <body ng-app="CastingAiApp">
 
-<div class="container">
+  <div class="container">
 
-  <header class="page-heading">
-    <h1 class="pull-left">CastingAi Scheduling</h1>
-    <hr>
-  </header>
+    <header class="page-heading">
+      <h1 class="pull-left">CastingAi Scheduling</h1>
+      <hr>
+    </header>
 
-  <div class="buttons">
+    <div class="buttons">
       <button class="btn btn-primary btn-lg" id="authorized">Authorize</button>
       <button class="btn btn-danger btn-lg" id="signout">Sign Out</button>
-  </div>
+    </div>
     <h1 class="page-heading">Available Times</h1>
 
     <section ng-controller="TimesController as times">
       <ul id="times">
         <li ng-repeat="time in times.all" data-id="">
           {{time.time}}
-            <input type="text" id="time-attendee-email" ng-model="time.newEvent.email" placeholder="john@doe.com" class="form-control focus" required>{{times.email}}
-            <button class='btn btn-success form-btn' ng-click="times.bookTime(time)">Book Time</button>
-       </li>
-     </ul>
-  </section>
-  <section class="bottom">
-    <iframe src="https://calendar.google.com/calendar/embed?mode=WEEK&showPrint=0&showCalendars=0&color=%23AB8B00&showNav=0&showTz=0&wkst=2&src=o3fe9sivdnaqokfc367te542cs%40group.calendar.google.com&ctz=America/Denver" style="border: 0" height="600" frameborder="0" scrolling="no"></iframe>
-  </section>
+          <input type="text" id="time-attendee-email" ng-model="time.newEvent.email" placeholder="john@doe.com" class="form-control focus" required>{{times.email}}
+          <button class='btn btn-success form-btn' ng-click="times.bookTime(time)">Book Time</button>
+        </li>
+      </ul>
+    </section>
+    <section class="bottom">
+      <iframe src="https://calendar.google.com/calendar/embed?mode=WEEK&showPrint=0&showCalendars=0&color=%23AB8B00&showNav=0&showTz=0&wkst=2&src=o3fe9sivdnaqokfc367te542cs%40group.calendar.google.com&ctz=America/Denver" style="border: 0" height="600" frameborder="0" scrolling="no"></iframe>
+    </section>
 
-</body>
-<script async defer src="https://apis.google.com/js/api.js"
-onload="this.onload=function(){
-};
-handleClientLoad()"
-onreadystatechange="if (this.readyState === 'complete') this.onload()">
+  </body>
+  <script async defer src="https://apis.google.com/js/api.js"
+  onload="this.onload=function(){
+  };
+  handleClientLoad()"
+  onreadystatechange="if (this.readyState === 'complete') this.onload()">
 </script>
 </script>
 </html>
