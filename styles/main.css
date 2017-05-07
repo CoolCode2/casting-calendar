@@ -1,16 +1,27 @@
+/*background*/
+body {
+	background-color: #7FDEFF;
+}
+/*all buttons*/
 .btn {
 	border-radius: 10px;
 }
 
 /*heading*/
-h1 {
-	font-family: "Cabin", sans-serif;
-	text-align: center;
-	padding: 10px 0;
+.page-heading {
+	color: #4F518C;
+  font-family: 'Cabin', sans-serif;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.buttons {
+  text-align: center;
 }
 
 /*booking spots*/
-ul {
+#times {
+	float: left;
 	list-style: none;
 }
 
@@ -43,23 +54,7 @@ li input {
 	opacity: .7;
 }
 
-#times {
-	float: left;
-}
-
+/*calendar*/
 iframe {
 	width: 100%;
-}
-
-#form {
-	float: right;
-}
-
-.buttons {
-    text-align: center;
-}
-
-.page-header {
-    font-family: 'Cabin', sans-serif;
-    text-align: center;
 }
